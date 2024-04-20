@@ -61,7 +61,7 @@ body {
 	border-top: 1px solid #333;
 	border-bottom: 1px solid #333;
 }
-.phone-number {
+.phone-number, .geo {
   text-decoration: none;
   color: rgb(161, 158, 158); 
 }
