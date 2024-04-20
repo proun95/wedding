@@ -1,0 +1,52 @@
+body {
+  margin: 2rem 5rem;
+  background: #faeff7;
+}
+.main-container {
+
+}
+.title {
+  text-align: center;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+}
+.title-section {
+  font-style: italic;
+  margin-bottom: 2rem
+}
+.phone-numbers {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.phone-numbers-section {
+  margin-bottom: 0.6rem
+}
+.main-text {
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+.section {
+  margin-bottom: 1rem;
+}
+@media (max-width: 770px) {
+  body {
+    margin: 3rem 2.5rem;
+  }
+  .title {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  }
+  .title-section {
+    margin-bottom: 1.5rem;
+  }
+  .phone-numbers {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .main-text {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+}
