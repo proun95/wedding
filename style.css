@@ -6,11 +6,17 @@
   font-family: Rosvigts;
   src: url("fonts/Rosvigts.otf") format("opentype");
 }
+@font-face {
+  font-family: Alana;
+  src: url("fonts/Alana.otf") format("opentype");
+}
 
 body {
-  font-family: 'Rosvigts';
+  font-family: 'Alana';
   margin: 2rem 5rem;
   background: #faeff7;
+  line-height: 1.3rem;
+
 }
 .main-container {
 
@@ -22,7 +28,7 @@ body {
   line-height: 2.5rem;
 }
 .place {
-  font-family: 'Rosvigts';
+  font-family: 'Casanova';
   text-align: center;
   font-size: 1.7rem;
   line-height: 2.2rem;
@@ -46,6 +52,18 @@ body {
 }
 .section {
   margin-bottom: 1rem;
+}
+.hr-double {
+	margin: 20px 0;
+	padding: 0;
+	height: 1px;
+	border: none;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+}
+.phone-number {
+  text-decoration: none;
+  color: rgb(161, 158, 158); 
 }
 @media (max-width: 770px) {
   body {
