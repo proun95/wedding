@@ -10,16 +10,19 @@
   font-family: Alana;
   src: url("fonts/Alana.otf") format("opentype");
 }
-
 body {
   font-family: 'Alana';
   margin: 2rem 5rem;
-  background: #faeff7;
+  height: 100%;
+  background: #ffffff;
   line-height: 1.3rem;
-
+  background-image: url("images/02.png"), url("images/01.png");
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 400px, 300px;
 }
 .main-container {
-
+  
 }
 .title {
   font-family: 'Casanova';
