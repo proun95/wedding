@@ -34,7 +34,7 @@ body {
   z-index: 4444;
   animation-name: loader-back;
   animation-duration: 2.5s;
-  /* animation-delay: 0.5s; */
+  animation-delay: 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -97,7 +97,7 @@ body {
   left: 50px;
   animation-name: moving;
   animation-duration: 2s;
-  /* animation-delay: 0.5s; */
+  animation-delay: 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
