@@ -10,6 +10,9 @@
   font-family: Alana;
   src: url("fonts/Alana.otf") format("opentype");
 }
+html {
+  min-height: 100%;
+}
 body {
   font-family: 'Alana';
   margin: 2rem 5rem;
@@ -112,7 +115,7 @@ body {
 }
 @media (max-width: 770px) {
   body {
-    margin: 3rem 2.5rem;
+    margin: 5rem 2.5rem;
   }
   .title {
     font-size: 2.5rem;
