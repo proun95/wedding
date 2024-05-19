@@ -24,15 +24,17 @@
 
       <hr class="hr-double">
 
-      <div class="phone-numbers">
-        <div class="phone-numbers-section">Номера для связи:</div>
-        <div><a class="phone-number" href="tel:+79041908899">+7(904)190-88-99</a> - Александр</div>
-        <div><a class="phone-number" href="tel:+79061417139">+7(906)141-71-39</a> - Анастасия</div>
-      </div>
+      
 
       <div class="main-text">
-        <div class="section">
-          Дорогие приглашаем
+        <div class="section invitation">
+          Дорогие <span class="names"></span>, приглашаем вас разделить с нами радость особенного дня - нашей свадьбы! Она состоится 14 июля 2024 на хуторе "Своя ферма" (адрес: Ишеевка, ул. Винограная, д. 11/1). Просим сообщить о возможности своего присутствия до 10 июня.
+          <div class="schedule-section"><img class="schedule" src="images/schedule.png"></div>
+        </div>
+        <div class="phone-numbers">
+          <div class="phone-numbers-section">Наши номера для связи:</div>
+          <div><a class="phone-number" href="tel:+79041908899">+7(904)190-88-99</a> - Александр</div>
+          <div><a class="phone-number" href="tel:+79061417139">+7(906)141-71-39</a> - Анастасия</div>
         </div>
         <div class="section">
           Нам очень важно, чтобы каждый гость чувствовал себя комфортно, поэтому мы организуем трансфер из мест сбора,
@@ -42,9 +44,19 @@
           Немного позже здесь появится подробная информация о месте проведения, автобусах, точках сбора, времени и др.
         </div>
         <div class="section">
-          А пока ждём от вас подтверждения, любым удобным для вас способом :)
+          
         </div>
       </div>
     </div>
+    <script>
+      let namesElement = document.querySelector(".names");
+      let invitationElement = document.querySelector(".invitation");
+      let params = new URLSearchParams(document.location.search);
+      let names = params.get("names"); 
+      namesElement.textContent = names;
+      if (names == null){
+        invitationElement.remove();
+      }
+    </script>
   </body>
 </html>

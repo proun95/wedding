@@ -60,7 +60,7 @@ body {
   margin-bottom: 2rem
 }
 .phone-numbers {
-  margin-top: 2rem;
+  margin-bottom: 1.3rem;
   font-size: 1.3rem;
   text-align: center;
 }
@@ -72,6 +72,19 @@ body {
   font-size: 1.3rem;
   text-align: justify;
 }
+
+.names {
+  font-size: 1.6rem;
+}
+.schedule-section {
+  text-align: center;
+}
+.schedule {
+  width: 90%;
+  max-width: 15rem;
+  margin: 1rem;
+}
+
 .section {
   margin-bottom: 1rem;
 }
@@ -127,7 +140,7 @@ body {
     margin-bottom: 1.5rem;
   }
   .phone-numbers {
-    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 1.2rem;
   }
   .main-text {
