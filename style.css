@@ -24,9 +24,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-size: 400px, 300px;
 }
-.main-container {
-  
-}
+
 .loader {
   position: fixed;
   top: 0;
@@ -78,6 +76,7 @@ body {
 }
 .schedule-section {
   text-align: center;
+  margin-top: 1rem;
 }
 .schedule {
   width: 90%;
@@ -99,6 +98,16 @@ body {
 .phone-number, .geo {
   text-decoration: none;
   color: rgb(161, 158, 158); 
+}
+ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+ul li:before {
+  content: "\2665 \00a0";
+  color: #e3867c;
 }
 .fiance {
   display: block;
