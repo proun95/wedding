@@ -28,7 +28,7 @@
 
       <div class="main-text">
         <div class="section invitation">
-          Дорогие <span class="names"></span>, приглашаем вас разделить с нами радость особенного дня - нашей свадьбы! Она состоится 14 июля 2024 на хуторе "Своя ферма" (адрес: Ишеевка, ул. Винограная, д. 11/1). Просим сообщить о возможности своего присутствия до 10 июня.
+          <span class="dear"></span> <span class="names"></span>, приглашаем разделить с нами радость особенного дня - нашей свадьбы! Она состоится 14 июля 2024 на хуторе "Своя ферма" (адрес: Ишеевка, ул. Винограная, д. 11/1). Просим сообщить о возможности своего присутствия до 10 июня.
           <div class="schedule-section"><img class="schedule" src="images/schedule.png"></div>
         </div>
         <div class="phone-numbers">
@@ -55,12 +55,22 @@
     </div>
     <script>
       let namesElement = document.querySelector(".names");
+      let nameElement = document.querySelector(".name");
+      let dearElement = document.querySelector(".dear");
       let invitationElement = document.querySelector(".invitation");
       let params = new URLSearchParams(document.location.search);
-      let names = params.get("names"); 
-      namesElement.textContent = names;
-      if (names == null){
+      let names = params.get("names");
+      let name = params.get("name"); 
+      if (names == null && name == null){
         invitationElement.remove();
+      }
+      else if (names == null){
+        namesElement.textContent = name;
+        dearElement.textContent = "Дорогая";
+      }
+      else{
+        namesElement.textContent = names;
+        dearElement.textContent = "Дорогие";
       }
     </script>
   </body>
