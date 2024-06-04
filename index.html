@@ -40,6 +40,9 @@
           Нам очень важно, чтобы каждый гость чувствовал себя комфортно, поэтому мы организуем трансфер из мест сбора,
           который отвезёт вас на мероприятие и привезёт обратно (информация о нем появится здесь позднее).
         </div>
+        <div class="map-section test">
+          <img class="map" src="images/map.png">
+        </div>
         <div class="section">
           Немного позже здесь появится подробная информация о месте проведения, автобусах, точках сбора, времени и др.
         </div>
@@ -57,10 +60,15 @@
       let namesElement = document.querySelector(".names");
       let nameElement = document.querySelector(".name");
       let dearElement = document.querySelector(".dear");
+      let testElement = document.querySelector(".test");
       let invitationElement = document.querySelector(".invitation");
       let params = new URLSearchParams(document.location.search);
       let names = params.get("names");
       let name = params.get("name"); 
+      let isTest = params.get("test"); 
+      if (isTest != 1){
+        testElement.remove();
+      }
       if (names == null && name == null){
         invitationElement.remove();
       }

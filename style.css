@@ -84,6 +84,17 @@ body {
   margin: 1rem;
 }
 
+.map-section {
+  text-align: center;
+  margin-top: 1rem;
+}
+.map {
+  width: 100%;
+  max-width: 30rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
 .section {
   margin-bottom: 1rem;
 }
