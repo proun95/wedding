@@ -25,6 +25,14 @@ body {
   background-size: 400px, 300px;
 }
 
+h4 {
+  text-align: center;
+}
+.normal {
+  font-family: 'Arial';
+  font-size: 1rem;
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -106,10 +114,16 @@ body {
 	border-top: 1px solid #333;
 	border-bottom: 1px solid #333;
 }
-.phone-number, .geo {
+.phone-number, .geo, .link {
   text-decoration: none;
   color: rgb(161, 158, 158); 
+  z-index: 10;
+  position: relative;
 }
+.tab {
+  margin-left: 1.5rem;
+}
+
 ul {
   list-style: none;
   padding-left: 1rem;
