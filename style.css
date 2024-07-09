@@ -31,6 +31,7 @@ h4 {
 
 table {
   border: 1px solid;
+  border-radius: 1rem;
   margin:auto;
 }
 .caption {
@@ -40,6 +41,8 @@ table {
 .normal {
   font-family: 'Arial';
   font-size: 1rem;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
 }
 
 .loader {
